@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>百度日历</title>
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+  <!-- 添加class active变色 -->
+  <div id="calendar">
+    <div class="left">
+      <div class="topBar">
+        <!-- 点击添加 active -->
+        <div class="select yearSelect">
+          <div class="selected">
+            <span>2021年</span>
+            <i>></i>
+          </div>
+          <div class="selectBox">
+            <ul>
+              <li>1970年</li>
+              <li>1970年</li>
+              <li class="active">1970年</li>
+              <li>1970年</li>
+              <li>1970年</li>
+              <li>1970年</li>
+              <li>1970年</li>
+              <li>1970年</li>
+              <li>1970年</li>
+              <li>1970年</li>
+            </ul>
+            <div class="scroll">
+              <span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="montSelect">
+          <div class="arrow prev">
+            <span><</span>
+          </div>
+          <!-- 点击触发 active -->
+          <div class="select">
+            <div class="selected">
+              <span>3月</span>
+              <i>></i>
+            </div>
+            <div class="selectBox">
+              <ul>
+                <li>1月</li>
+                <li>2月</li>
+                <li class="active">3月</li>
+                <li>4月</li>
+                <li>5月</li>
+                <li>6月</li>
+                <li>7月</li>
+              </ul>
+            </div>
+          </div>
+          <div class="arrow next">
+            <span>></span>
+          </div>
+        </div>
+
+        <div class="select holidaySelect">
+          <div class="selected">
+            <span>国庆节</span>
+            <i>></i>
+          </div>
+          <div class="selectBox">
+            <ul>
+              <li>1月</li>
+              <li>2月</li>
+              <li class="active">3月</li>
+              <li>4月</li>
+              <li>5月</li>
+              <li>6月</li>
+              <li>7月</li>
+            </ul>
+          </div>
+        </div>
+        <button>返回今天</button>
+      </div>
+     
+      <table class="dateWrap">
+        <thead>
+          <tr>
+            <th>一</th>
+            <th>二</th>
+            <th>三</th>
+            <th>四</th>
+            <th>五</th>
+            <th>六</th>
+            <th>七</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- <tr>
+            <td>
+              <div class="prevMonth">
+                <span>12</span>
+                <span>初二</span>
+              </div>
+            </td>
+            <td>
+              <div class="prevMonth">
+                <span>12</span>
+                <span>初二</span>
+              </div>
+            </td>
+            <td>
+              <div class="prevMonth">
+                <span>12</span>
+                <span>初二</span>
+              </div>
+            </td>
+            <td>
+              <div>
+                <span>12</span>
+                <span>初二</span>
+              </div>
+            </td>
+            <td>
+              <div>
+                <span>12</span>
+                <span>初二</span>
+              </div>
+            </td>
+            <td>
+              <div>
+                <span>12</span>
+                <span>初二</span>
+              </div>
+            </td>
+            <td>
+              <div>
+                <span>12</span>
+                <span>初二</span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <span>12</span>
+                <span>初二</span>
+              </div>
+            </td>
+            <td>
+              <div class="holiday">
+                <span>12</span>
+                <span>初二</span>
+              </div>
+            </td>
+            <td>
+              <div class="holiday">
+                <span>12</span>
+                <span>初二</span>
+              </div>
+            </td>
+            <td>
+              <div >
+                <span>12</span>
+                <span>初二</span>
+              </div>
+            </td>
+            <td>
+              <div class="weekday">
+                <span>12</span>
+                <span>初二</span>
+              </div>
+            </td>
+            <td>
+              <div class="weekday">
+                <span>12</span>
+                <span>初二</span>
+              </div>
+            </td>
+            <td>
+              <div>
+                <span>12</span>
+                <span>初二</span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <span>12</span>
+                <span>初二</span>
+              </div>
+            </td>
+            <td>
+              <div>
+                <span>12</span>
+                <span>初二</span>
+              </div>
+            </td>
+            <td>
+              <div>
+                <span>12</span>
+                <span>初二</span>
+              </div>
+            </td>
+            <td>
+              <div class="active">
+                <span>12</span>
+                <span>初二</span>
+              </div>
+            </td>
+            <td>
+              <div class="today">
+                <span>12</span>
+                <span>初二</span>
+              </div>
+            </td>
+            <td>
+              <div class="nextMonth">
+                <span>12</span>
+                <span>初二</span>
+              </div>
+            </td>
+            <td>
+              <div class="nextMonth">
+                <span>12</span>
+                <span>初二</span>
+              </div>
+            </td>
+          </tr> -->
+        </tbody>
+      </table>
+    </div>
+
+    <div class="right">
+      <p class="date">2021-12-24</p>
+      <div class="day">24</div>
+      <div class="lunar">
+        <p>十一月廿一</p>
+        <p>辛丑年 牛</p>
+        <p>庚子月 丙午日</p>
+      </div>
+      <ul class="holidayList">
+        <li>平安夜</li>
+        <li>臭氧层保护日</li>
+      </ul>
+      <div class="suit">
+        <div class="default">
+          <dl>
+            <dt>宜</dt>
+            <dd>结婚</dd>
+            <dd>结婚</dd>
+            <dd>结婚</dd>
+            <dd>结婚</dd>
+            <dd>结婚</dd>
+            <dd>结婚</dd>
+          </dl>
+          <dl>
+            <dt>忌</dt>
+            <dd>装修</dd>
+            <dd>装修</dd>
+            <dd>装修</dd>
+            <dd>装修</dd>
+            <dd>装修</dd>
+            <dd>装修</dd>
+          </dl>
+        </div>
+        <div class="hover">
+          <dl>
+            <dt>宜</dt>
+            <dd>结婚、领证、求嗣、修坟、赴任、破土、祭祀、解除、破屋、启钻、嫁娶、立券、求医、招赘、词讼、行丧、纳婿、服药、和讼</dd>
+            
+          </dl>
+          <dl>
+            <dt>忌</dt>
+            <dd>搬家、装修、开业、入宅、开工、动土、安门、安床、出行、订婚、安葬、上梁、开张、作灶、旅游、修造、祈福、开市、纳畜、出火、纳采、移徙、盖屋、冠笄</dd>
+          
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./js/jQuery3.6.js"></script>
+<script src="./js/index.js"></script>
+</html>
