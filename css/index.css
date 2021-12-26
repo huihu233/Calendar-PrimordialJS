@@ -269,6 +269,7 @@ button{
 /* 右边 */
 #calendar .date {
   line-height: 45px;
+  user-select: none;
 }
 #calendar .day {
   width: 80px;
@@ -302,7 +303,6 @@ button{
   width: 3px;
   height: 3px;
   background: #fff;
-
   position: absolute;
   left: 5px;
   top: 6px;
